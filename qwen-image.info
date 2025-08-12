@@ -1,0 +1,7 @@
+﻿{
+    "name":  "qwen-image",
+    "short-description":  "Qwen Image",
+    "markdown-readme":  "# Qwen Image\n\nText-to-image generation graph using SD/CLIP/UNet/VAE components with guidance, scheduler, and seed control.\n\n## Inputs\n- **text**: Prompt text for CLIP encode.\n- **steps / sampler_name / scheduler / denoise / cfg**: Sampler controls.\n- **seed**: Long/Integer.\n- **unet_name / weight_dtype / clip_name / vae_name**: Model selections.\n- **width / height / batch_size**: Generation shape.\n- **filename_prefix**: Save prefix.\n\n## Outputs\n- **images**: ArrayList of generated images.\n- **image-0**: First image for quick wiring.\n\n## Tips\n- Lower `cfg` for more faithful adherence to prompt; raise steps for quality.\n- Ensure models exist on disk with the configured names.",
+    "version":  1,
+    "version-date":  "12 AUG 2024"
+}

@@ -1,0 +1,7 @@
+﻿{
+    "name":  "wildcard-generator",
+    "short-description":  "Wildcard Generator",
+    "markdown-readme":  "# Wildcard Generator\n\nLLM-driven prompt wildcard expander that emits lists/phrases/templates for downstream composition.\n\n## Inputs\n- **model**: String. Ollama or remote chat model.\n- **message**: String. Instruction (e.g., \"give me 20 art styles\").\n- **system**: String. Optional policy/styling.\n- **chatlog / stop / temperature / maxTokens / context / seed / stream**: Optional controls.\n\n## Outputs\n- **finalOutput**: String. Expanded wildcard content.\n- **streamOutput / newChatlog**: Optional.\n\n## Example\n```text\nmessage: generate 30 landscape composition prompts with wildcard {lighting}\n```",
+    "version":  1,
+    "version-date":  "12 AUG 2024"
+}
