@@ -1,7 +1,0 @@
-﻿{
-    "name":  "neu-nodes-rag-search",
-    "short-description":  "Neu Nodes Rag Search",
-    "markdown-readme":  "# Neu Nodes RAG Search\n\nIndex and search Neu graphs/nodes with a retrieval-augmented workflow to surface relevant components and docs.\n\n## Capabilities\n- Scans nodes and attributes from target graphs\n- Emits consolidated documentation text\n- Can be paired with an LLM/chat node for semantic search\n\n## Outputs\n- **documentation**: String. Collated descriptions.\n- **nodeCount**: Integer. Count of indexed nodes.\n\n## Usage\nPoint the pipeline at one or more `.neu` graphs and consume `documentation` for downstream chat/QA or indexing.",
-    "version":  1,
-    "version-date":  "12 AUG 2024"
-}
