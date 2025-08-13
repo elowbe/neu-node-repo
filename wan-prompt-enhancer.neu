@@ -694,7 +694,7 @@
         "id": 776013963,
         "class": "com.loom.graph.nodes.ModuleInputNode",
         "properties": {
-            "quick_value": "artifish/llama3.2-uncensored",
+            "quick_value": "llama3.2",
             "x": -3255.2988,
             "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
             "y": -1396.5353,
