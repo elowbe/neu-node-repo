@@ -5,6 +5,7 @@
     "version":  1,
     "version-date":  "12 AUG 2024",
     "dependencies":["comfyui", "ComfyUI_UltimateSDUpscale"],
-    "author":"kingroka"
+    "author":"kingroka",
+    "category":"SD"
 }
 }
