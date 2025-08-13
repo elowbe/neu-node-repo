@@ -1,0 +1,1859 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "item",
+                    "nodeID": 1154470686
+                },
+                "label": "image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "label": "depth",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            }
+        ],
+        "id": 1242485525,
+        "class": "com.loom.graph.nodes.ModuleNode",
+        "properties": {
+            "quick_image": "",
+            "origin": "F:\\eclipse-workspace\\Neu\\projects\\ez-depth-anything.neu",
+            "x": -2356.614,
+            "y": -326.32172,
+            "quick_enabled": true,
+            "title": "ez-depth-anything.neu",
+            "graph": "{\"nodes\": [\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"images\",\n                \"ioState\": \"output\",\n                \"type\": \"java.util.ArrayList\",\n                \"required\": true\n            },\n            {\n                \"label\": \"image-0\",\n                \"ioState\": \"output\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"2.(DownloadAndLoadDepthAnythingV2Model): model\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"output\",\n                    \"nodeID\": 806682767\n                },\n                \"label\": \"3.(LoadImage): image\",\n                \"ioState\": \"input\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"4.(SaveImage): filename_prefix\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"5.(ImageScaleToTotalPixels): megapixels\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Double\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"5.(ImageScaleToTotalPixels): upscale_method\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.String\",\n                \"required\": true\n            }\n        ],\n        \"id\": -926023539,\n        \"class\": \"com.loom.graph.nodes.AutoComfyUIWorkflowNode\",\n        \"properties\": {\n            \"quick_5.(ImageScaleToTotalPixels): megapixels\": 1.0000000000000002,\n            \"quick_5.(ImageScaleToTotalPixels): upscale_method\": \"nearest-exact\",\n            \"workflow\": {\n                \"1\": {\n                    \"class_type\": \"DepthAnything_V2\",\n                    \"inputs\": {\n                        \"images\": [\n                            \"5\",\n                            0\n                        ],\n                        \"da_model\": [\n                            \"2\",\n                            0\n                        ]\n                    },\n                    \"_meta\": {\"title\": \"Depth Anything V2\"}\n                },\n                \"2\": {\n                    \"class_type\": \"DownloadAndLoadDepthAnythingV2Model\",\n                    \"inputs\": {\"model\": \"depth_anything_v2_vits_fp16.safetensors\"},\n                    \"_meta\": {\"title\": \"DownloadAndLoadDepthAnythingV2Model\"}\n                },\n                \"3\": {\n                    \"class_type\": \"LoadImage\",\n                    \"inputs\": {\"image\": \"turtle.png\"},\n                    \"_meta\": {\"title\": \"Load Image\"}\n                },\n                \"4\": {\n                    \"class_type\": \"SaveImage\",\n                    \"inputs\": {\n                        \"filename_prefix\": \"depth_anything_v2\",\n                        \"images\": [\n                            \"1\",\n                            0\n                        ]\n                    },\n                    \"_meta\": {\"title\": \"Save Image\"}\n                },\n                \"5\": {\n                    \"class_type\": \"ImageScaleToTotalPixels\",\n                    \"inputs\": {\n                        \"image\": [\n                            \"3\",\n                            0\n                        ],\n                        \"megapixels\": 1.0000000000000002,\n                        \"upscale_method\": \"nearest-exact\"\n                    },\n                    \"_meta\": {\"title\": \"Scale Image to Total Pixels\"}\n                }\n            },\n            \"x\": -1464.3525,\n            \"y\": 599.8768,\n            \"quick_enabled\": true,\n            \"title\": \"depth-anything.json\",\n            \"quick_4.(SaveImage): filename_prefix\": \"depth_anything_v2\",\n            \"quick_2.(DownloadAndLoadDepthAnythingV2Model): model\": \"depth_anything_v2_vitl_fp32.safetensors\",\n            \"quick_3.(LoadImage): image\": \"\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"image-0\",\n                    \"nodeID\": -926023539\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": false\n            }\n        ],\n        \"id\": -43384690,\n        \"class\": \"com.loom.graph.nodes.ModuleOutputNode\",\n        \"properties\": {\n            \"quick_value\": \"\",\n            \"x\": -141.47044,\n            \"options\": \"Text\\nSelect\\nNumber\\nTrue/False\\nJSON\\nImage\\nVideo\\nList\\nAny\\n\",\n            \"y\": 384.00836,\n            \"label\": \"depth\",\n            \"quick_enabled\": true,\n            \"type\": \"java.awt.image.BufferedImage\"\n        }\n    },\n    {\n        \"attributes\": [\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"enabled\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"label\": \"enabled_\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Boolean\",\n                \"required\": true\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"sync\",\n                \"ioState\": \"input\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"_sync\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"label\": \"error\",\n                \"ioState\": \"output\",\n                \"type\": \"java.lang.Object\",\n                \"required\": false\n            },\n            {\n                \"connected\": {\n                    \"label\": \"\",\n                    \"nodeID\": 0\n                },\n                \"label\": \"value\",\n                \"ioState\": \"input\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": false\n            },\n            {\n                \"label\": \"output\",\n                \"ioState\": \"output\",\n                \"type\": \"java.awt.image.BufferedImage\",\n                \"required\": true\n            }\n        ],\n        \"id\": 806682767,\n        \"class\": \"com.loom.graph.nodes.ModuleInputNode\",\n        \"properties\": {\n            \"quick_value\": \"BufferedImage@1f6f93e3: type = 5 ColorModel: #pixelBits = 24 numComponents = 3 color space = java.awt.color.ICC_ColorSpace@67c74d22 transparency = 1 has alpha = false isAlphaPre = false ByteInterleavedRaster: width = 336 height = 512 #numDataElements 3 dataOff[0] = 2\",\n            \"x\": -2464.698,\n            \"options\": \"Text\\nSelect\\nNumber\\nTrue/False\\nJSON\\nImage\\nVideo\\nList\\nAny\\n\",\n            \"y\": 886.06506,\n            \"label\": \"image\",\n            \"quick_enabled\": true,\n            \"type\": \"java.awt.image.BufferedImage\"\n        }\n    }\n]}"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "iteration",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1596707620
+                },
+                "label": "list",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": true
+            },
+            {
+                "label": "complete",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "label": "item",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            }
+        ],
+        "id": 1154470686,
+        "class": "com.loom.graph.nodes.ForEachNode",
+        "properties": {
+            "x": -3260.2698,
+            "y": -980.5717,
+            "quick_list": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "initialJson",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "jsonArray",
+                "ioState": "output",
+                "type": "org.json.JSONArray",
+                "required": false
+            }
+        ],
+        "id": 2136199967,
+        "class": "com.loom.graph.nodes.JsonArrayCreateNode",
+        "properties": {
+            "quick_initialJson": "",
+            "x": 1871.7867,
+            "y": -481.73126,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "jsonArray",
+                    "nodeID": 2136199967
+                },
+                "label": "jsonArray",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": 353293095
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": true
+            },
+            {
+                "label": "updatedJsonArray",
+                "ioState": "output",
+                "type": "org.json.JSONArray",
+                "required": false
+            }
+        ],
+        "id": -1852845280,
+        "class": "com.loom.graph.nodes.JsonArrayPutNode",
+        "properties": {
+            "quick_jsonArray": "",
+            "x": 3087.5613,
+            "y": -31.322052,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "complete",
+                    "nodeID": 1154470686
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "_sync",
+                    "nodeID": -1852845280
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "jsonArray",
+                    "nodeID": 2136199967
+                },
+                "label": "inputArray",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "frameRate",
+                    "nodeID": 771085091
+                },
+                "label": "frameRate",
+                "ioState": "input",
+                "type": "java.lang.Float",
+                "required": true
+            },
+            {
+                "label": "outputVideo",
+                "ioState": "output",
+                "type": "com.loom.Video",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1109404895,
+        "class": "com.loom.graph.nodes.JsonArrayToVideoNode",
+        "properties": {
+            "quick_frameRate": 0,
+            "x": 4033.0442,
+            "y": -826.42426,
+            "quick_inputArray": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1596707620
+                },
+                "label": "inputVideo",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": true
+            },
+            {
+                "label": "width",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "height",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "frameCount",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "frameRate",
+                "ioState": "output",
+                "type": "java.lang.Float",
+                "required": false
+            },
+            {
+                "label": "duration",
+                "ioState": "output",
+                "type": "java.lang.Double",
+                "required": false
+            },
+            {
+                "label": "frameType",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "estimatedFrameMemory",
+                "ioState": "output",
+                "type": "java.lang.Long",
+                "required": false
+            },
+            {
+                "label": "hasAudio",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "label": "audioSampleRate",
+                "ioState": "output",
+                "type": "java.lang.Float",
+                "required": false
+            },
+            {
+                "label": "audioChannels",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "audioBitsPerSample",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "audioEncoding",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "audioDataSize",
+                "ioState": "output",
+                "type": "java.lang.Long",
+                "required": false
+            },
+            {
+                "label": "totalEstimatedMemory",
+                "ioState": "output",
+                "type": "java.lang.Long",
+                "required": false
+            },
+            {
+                "label": "sourcePath",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 771085091,
+        "class": "com.loom.graph.nodes.VideoInfoNode",
+        "properties": {
+            "x": 1945.0183,
+            "y": -1406.3728,
+            "quick_enabled": true,
+            "quick_inputVideo": ""
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 271831837
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "com.loom.Video",
+                "required": true
+            }
+        ],
+        "id": 1596707620,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": -4194.6245,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
+            "y": -1812.0718,
+            "label": "2d-video",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "item",
+                    "nodeID": 1154470686
+                },
+                "label": "color-image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": 768791358
+                },
+                "label": "depth-image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -2030775461
+                },
+                "label": "tilt-x",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "tilt-y",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "label": "output-image",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            }
+        ],
+        "id": -1045179610,
+        "class": "com.loom.graph.nodes.DepthApplicationNode",
+        "properties": {
+            "quick_color-image": "",
+            "quick_depth-image": "",
+            "x": -481.42133,
+            "y": 789.47107,
+            "quick_tilt-x": 1,
+            "quick_enabled": true,
+            "quick_tilt-y": 0
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -572665016
+                },
+                "label": "leftImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 186438475
+                },
+                "label": "rightImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "label": "outputImage",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 353293095,
+        "class": "com.loom.graph.nodes.ImageSideStitchNode",
+        "properties": {
+            "x": 2287.561,
+            "quick_leftImage": "",
+            "y": 419.08716,
+            "quick_enabled": true,
+            "quick_rightImage": ""
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "item",
+                    "nodeID": 1154470686
+                },
+                "label": "color-image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": 768791358
+                },
+                "label": "depth-image",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -985017508
+                },
+                "label": "tilt-x",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "tilt-y",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "label": "output-image",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            }
+        ],
+        "id": -59321557,
+        "class": "com.loom.graph.nodes.DepthApplicationNode",
+        "properties": {
+            "quick_color-image": "",
+            "quick_depth-image": "",
+            "x": -478.41168,
+            "y": -12.028931,
+            "quick_tilt-x": -1,
+            "quick_enabled": true,
+            "quick_tilt-y": 0
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "initialJson",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "jsonArray",
+                "ioState": "output",
+                "type": "org.json.JSONArray",
+                "required": false
+            }
+        ],
+        "id": 1677644592,
+        "class": "com.loom.graph.nodes.JsonArrayCreateNode",
+        "properties": {
+            "quick_initialJson": "",
+            "x": -1091.4224,
+            "y": 1912.4353,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "jsonArray",
+                    "nodeID": 1677644592
+                },
+                "label": "jsonArray",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "depth",
+                    "nodeID": 1242485525
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": true
+            },
+            {
+                "label": "updatedJsonArray",
+                "ioState": "output",
+                "type": "org.json.JSONArray",
+                "required": false
+            }
+        ],
+        "id": 1920455477,
+        "class": "com.loom.graph.nodes.JsonArrayPutNode",
+        "properties": {
+            "quick_jsonArray": "",
+            "x": 345.89026,
+            "y": 1108.2673,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "complete",
+                    "nodeID": 1154470686
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": "_sync"},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "updatedJsonArray",
+                    "nodeID": 1920455477
+                },
+                "label": "inputArray",
+                "ioState": "input",
+                "type": "org.json.JSONArray",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "frameRate",
+                    "nodeID": 771085091
+                },
+                "label": "frameRate",
+                "ioState": "input",
+                "type": "java.lang.Float",
+                "required": true
+            },
+            {
+                "label": "outputVideo",
+                "ioState": "output",
+                "type": "com.loom.Video",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1465593030,
+        "class": "com.loom.graph.nodes.JsonArrayToVideoNode",
+        "properties": {
+            "quick_frameRate": 0,
+            "x": 4067.0002,
+            "y": -437.2849,
+            "quick_inputArray": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "enabled_",
+                    "nodeID": -1465593030
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "outputVideo",
+                    "nodeID": -1465593030
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            }
+        ],
+        "id": -1212755139,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 5711.0854,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
+            "y": -666.52893,
+            "label": "depth",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "depth",
+                    "nodeID": 1242485525
+                },
+                "label": "inputImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "width",
+                    "nodeID": 2098451263
+                },
+                "label": "width",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "height",
+                    "nodeID": 2098451263
+                },
+                "label": "height",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "label": "outputImage",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 768791358,
+        "class": "com.loom.graph.nodes.ResizeImageNode",
+        "properties": {
+            "quick_height": 0,
+            "x": -1496.8706,
+            "y": -653.4467,
+            "quick_inputImage": "",
+            "quick_width": 0,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "item",
+                    "nodeID": 1154470686
+                },
+                "label": "inputImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "label": "width",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            },
+            {
+                "label": "height",
+                "ioState": "output",
+                "type": "java.lang.Integer",
+                "required": false
+            }
+        ],
+        "id": 2098451263,
+        "class": "com.loom.graph.nodes.ImageDimensionsNode",
+        "properties": {
+            "x": -2396.9216,
+            "y": -980.5717,
+            "quick_inputImage": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            }
+        ],
+        "id": -366095552,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": true,
+            "x": -1517.9999,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
+            "y": 324.43536,
+            "label": "letterbox",
+            "quick_enabled": true,
+            "type": "java.lang.Boolean"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -366095552
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output-image",
+                    "nodeID": -59321557
+                },
+                "label": "inputImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "label": "outputImage",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1632644286,
+        "class": "com.loom.graph.nodes.ImageLetterboxNode",
+        "properties": {
+            "x": 321.58832,
+            "y": 156.20322,
+            "quick_inputImage": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -366095552
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output-image",
+                    "nodeID": -1045179610
+                },
+                "label": "inputImage",
+                "ioState": "input",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "label": "outputImage",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1043934395,
+        "class": "com.loom.graph.nodes.ImageLetterboxNode",
+        "properties": {
+            "x": 318.57867,
+            "y": 636.2032,
+            "quick_inputImage": "",
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": -1043934395
+                },
+                "label": "condition",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": -1043934395
+                },
+                "label": "trueValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output-image",
+                    "nodeID": -1045179610
+                },
+                "label": "falseValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "else",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            }
+        ],
+        "id": -572665016,
+        "class": "com.loom.graph.nodes.IfNode",
+        "properties": {
+            "quick_condition": false,
+            "x": 1224.2611,
+            "y": 766.08716,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": -1632644286
+                },
+                "label": "condition",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "outputImage",
+                    "nodeID": -1632644286
+                },
+                "label": "trueValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output-image",
+                    "nodeID": -59321557
+                },
+                "label": "falseValue",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "else",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            }
+        ],
+        "id": 186438475,
+        "class": "com.loom.graph.nodes.IfNode",
+        "properties": {
+            "quick_condition": false,
+            "x": 1311.6505,
+            "y": 72.08714,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -2030775461,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 1,
+            "x": -3340.2507,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
+            "y": 1153.4353,
+            "label": "depth-scale",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -2030775461
+                },
+                "label": "a",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "b",
+                "ioState": "input",
+                "type": "java.lang.Double",
+                "required": true
+            }
+        ],
+        "id": -985017508,
+        "class": "com.loom.graph.nodes.MultiplicationNode",
+        "properties": {
+            "quick_a": 0,
+            "x": -2065.362,
+            "y": 1153.4353,
+            "quick_enabled": true,
+            "quick_b": -1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "enabled_",
+                    "nodeID": -1109404895
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "outputVideo",
+                    "nodeID": -1109404895
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": false
+            }
+        ],
+        "id": 1681970015,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 5000.2583,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
+            "y": -826.42426,
+            "label": "3d-video",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    }
+]}

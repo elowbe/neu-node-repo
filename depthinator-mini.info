@@ -1,0 +1,13 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "depthinator-mini",
+  "category": "VIDEO",
+  "short-description": "Convert 2D videos to stereoscopic 3D.",
+  "version": "1",
+  "dependencies": [
+    "comfyi",
+    "ComfyUI-Depth-Anything-V2"
+  ]
+}
