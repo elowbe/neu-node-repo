@@ -1,0 +1,373 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "title",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "x",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "y",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -1010549691,
+        "class": "com.loom.graph.nodes.UiWindowNode",
+        "properties": {
+            "quick_min-height": -1,
+            "quick_title": "Conway's Game of Life",
+            "quick_max-width": -1,
+            "x": -1269.8307,
+            "y": -1050.4583,
+            "quick_min-width": -1,
+            "quick_y": 0,
+            "quick_enabled": true,
+            "quick_x": 0,
+            "quick_max-height": -1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": -1010549691
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1009894329
+                },
+                "label": "script",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "exception_log",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1010090938,
+        "class": "com.loom.graph.nodes.UiCanvasNode",
+        "properties": {
+            "quick_script": "// UiCanvas script skeleton (Java-formatted Groovy)\n// You can implement any of the Canvas callbacks below.\n// Available context properties:\n//   - uiWidth  (int): current canvas width\n//   - uiHeight (int): current canvas height\n//   - uiDisplay: the CanvasDisplay instance (optional)\n//   - globals : Map<String,Object> shared across the graph (GlobalNode-compatible)\n// Common imports are available: java.awt.*, java.awt.event.*,\n// com.jinteractive.gui.*, com.jinteractive.main.*, com.loom.graph.*\n// Exceptions are logged to the 'exception_log' output (unique errors only)\n\nvoid tick(Float delta){\n    // Called every frame with delta time in seconds (approx).\n}\n\nvoid draw(Graphics2D g2d){\n    // Example: clear background (uncomment to use)\n    // g2d.setColor(java.awt.Color.BLACK);\n    // g2d.fillRect(0, 0, (uiWidth as int), (uiHeight as int));\n}\n\nvoid destroy(){\n    // Called when the canvas is destroyed.\n}\n\nvoid mouseDown(ButtonType button){\n    // Mouse button pressed.\n}\n\nvoid mouseUp(ButtonType button){\n    // Mouse button released.\n}\n\nvoid scroll(int amount){\n    // Mouse wheel scrolled; positive is scroll up in most cases.\n}\n\nvoid keyDown(KeyEvent e){\n    // Key pressed; check e.getKeyCode().\n}\n\nvoid keyUp(KeyEvent e){\n    // Key released.\n}",
+            "quick_height": 600,
+            "x": 461.41534,
+            "y": -447.08325,
+            "quick_width": 800,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "processed-output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -1009894329,
+        "class": "com.loom.graph.nodes.TextNode",
+        "properties": {
+            "quick_input": "import groovy.transform.Field\n@Field int CELL_SIZE = 8;\n@Field int COLS = 100;\n@Field int ROWS = 75;\n@Field boolean[][] grid = new boolean[ROWS][COLS];\n@Field boolean[][] nextGrid = new boolean[ROWS][COLS];\n@Field boolean initialized = false;\n@Field boolean running = false;\n@Field float timeSinceUpdate = 0f;\n@Field float updateInterval = 0.1f;\n@Field float mx = 0f, my = 0f;\n@Field boolean mousePressed = false;\n\nvoid init(){\n  // Random initial pattern\n  java.util.Random rand = new java.util.Random();\n  for(int r = 0; r < ROWS; r++){\n    for(int c = 0; c < COLS; c++){\n      grid[r][c] = rand.nextFloat() < 0.15f;\n    }\n  }\n  initialized = true;\n}\n\nint countNeighbors(int row, int col){\n  int count = 0;\n  for(int dr = -1; dr <= 1; dr++){\n    for(int dc = -1; dc <= 1; dc++){\n      if(dr == 0 && dc == 0) continue;\n      int r = row + dr;\n      int c = col + dc;\n      if(r >= 0 && r < ROWS && c >= 0 && c < COLS && grid[r][c]) count++;\n    }\n  }\n  return count;\n}\n\nvoid updateGrid(){\n  for(int r = 0; r < ROWS; r++){\n    for(int c = 0; c < COLS; c++){\n      int neighbors = countNeighbors(r, c);\n      if(grid[r][c]){\n        nextGrid[r][c] = (neighbors == 2 || neighbors == 3);\n      } else {\n        nextGrid[r][c] = (neighbors == 3);\n      }\n    }\n  }\n  // Swap grids\n  boolean[][] temp = grid;\n  grid = nextGrid;\n  nextGrid = temp;\n}\n\nvoid tick(Float delta){\n  if(!initialized) init();\n  try{\n    def m = uiDisplay?.getCamera()?.getWorldMouse();\n    if(m != null){\n      def p = uiDisplay?.bounds?.position;\n      mx = (float)(m.x - (p != null ? p.x : 0));\n      my = (float)(m.y - (p != null ? p.y : 0));\n    }\n  } catch(Throwable ignore){}\n  \n  float dt = (delta != null ? delta.floatValue() : 0.016f);\n  if(running){\n    timeSinceUpdate += dt;\n    if(timeSinceUpdate >= updateInterval){\n      timeSinceUpdate = 0f;\n      updateGrid();\n    }\n  }\n  \n  // Draw with mouse when pressed\n  if(mousePressed){\n    int col = (int)(mx / CELL_SIZE);\n    int row = (int)(my / CELL_SIZE);\n    if(row >= 0 && row < ROWS && col >= 0 && col < COLS){\n      grid[row][col] = true;\n    }\n  }\n}\n\nvoid draw(Graphics2D g2d){\n  if(!initialized) init();\n  g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);\n  \n  // Background\n  g2d.setColor(new java.awt.Color(20, 20, 30));\n  g2d.fillRect(0, 0, uiWidth, uiHeight);\n  \n  // Grid lines\n  g2d.setColor(new java.awt.Color(40, 40, 50));\n  for(int i = 0; i <= COLS; i++){\n    g2d.drawLine(i * CELL_SIZE, 0, i * CELL_SIZE, ROWS * CELL_SIZE);\n  }\n  for(int i = 0; i <= ROWS; i++){\n    g2d.drawLine(0, i * CELL_SIZE, COLS * CELL_SIZE, i * CELL_SIZE);\n  }\n  \n  // Cells\n  for(int r = 0; r < ROWS; r++){\n    for(int c = 0; c < COLS; c++){\n      if(grid[r][c]){\n        g2d.setColor(new java.awt.Color(100, 255, 150));\n        g2d.fillRect(c * CELL_SIZE + 1, r * CELL_SIZE + 1, CELL_SIZE - 2, CELL_SIZE - 2);\n      }\n    }\n  }\n  \n  // Mouse hover highlight\n  int hoverCol = (int)(mx / CELL_SIZE);\n  int hoverRow = (int)(my / CELL_SIZE);\n  if(hoverRow >= 0 && hoverRow < ROWS && hoverCol >= 0 && hoverCol < COLS){\n    g2d.setColor(new java.awt.Color(255, 255, 100, 80));\n    g2d.fillRect(hoverCol * CELL_SIZE, hoverRow * CELL_SIZE, CELL_SIZE, CELL_SIZE);\n  }\n  \n  // Instructions\n  g2d.setColor(java.awt.Color.WHITE);\n  g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.PLAIN, 14));\n  String status = running ? \"Running (SPACE to pause)\" : \"Paused (SPACE to run)\";\n  g2d.drawString(status, 10, uiHeight - 40);\n  g2d.drawString(\"Click/Drag to draw | C to clear | R to randomize\", 10, uiHeight - 20);\n}\n\nvoid mouseDown(ButtonType button){\n  if(button == ButtonType.LEFT) mousePressed = true;\n}\n\nvoid mouseUp(ButtonType button){\n  if(button == ButtonType.LEFT) mousePressed = false;\n}\n\nvoid keyDown(KeyEvent e){\n  if(e.getKeyCode() == KeyEvent.VK_SPACE) running = !running;\n  if(e.getKeyCode() == KeyEvent.VK_C){\n    for(int r = 0; r < ROWS; r++){\n      for(int c = 0; c < COLS; c++){\n        grid[r][c] = false;\n      }\n    }\n  }\n  if(e.getKeyCode() == KeyEvent.VK_R){\n    java.util.Random rand = new java.util.Random();\n    for(int r = 0; r < ROWS; r++){\n      for(int c = 0; c < COLS; c++){\n        grid[r][c] = rand.nextFloat() < 0.15f;\n      }\n    }\n  }\n}\n\nvoid scroll(int amount){}\nvoid keyUp(KeyEvent e){}\nvoid destroy(){}",
+            "x": -1207.156,
+            "y": 499.1489,
+            "text": "",
+            "quick_enabled": true
+        }
+    }
+]}
