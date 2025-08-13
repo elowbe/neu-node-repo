@@ -204,7 +204,7 @@
             "x": 1994.3105,
             "y": -1967.474,
             "quick_message": "",
-            "quick_enabled": true,
+            "quick_enabled": false,
             "quick_stream": false,
             "quick_metadata": ""
         }
@@ -414,7 +414,7 @@
             "y": -346.96313,
             "quick_message": "",
             "quick_format": "",
-            "quick_enabled": true,
+            "quick_enabled": false,
             "quick_stream": false,
             "quick_seed": 0
         }
@@ -481,7 +481,7 @@
         "properties": {
             "quick_value": "hi",
             "x": -4455.7954,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 306.97754,
             "label": "message",
             "quick_enabled": true,
@@ -549,9 +549,9 @@
         "id": -348782177,
         "class": "com.loom.graph.nodes.ModuleInputNode",
         "properties": {
-            "quick_value": "openai:gpt-5",
+            "quick_value": "llama3.2",
             "x": -5993.225,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -1051.3204,
             "label": "model",
             "quick_enabled": true,
@@ -620,7 +620,7 @@
         "properties": {
             "quick_value": "",
             "x": -2568.2812,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 671.06335,
             "label": "chatlog",
             "quick_enabled": true,
@@ -924,7 +924,7 @@
         "properties": {
             "quick_value": "",
             "x": -4294.0176,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -2224.5215,
             "label": "system",
             "quick_enabled": true,
@@ -993,7 +993,7 @@
         "properties": {
             "quick_value": 1,
             "x": -3407.0532,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 707.40967,
             "label": "temperature",
             "quick_enabled": true,
@@ -1062,7 +1062,7 @@
         "properties": {
             "quick_value": "",
             "x": -2578.4531,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 1382.4414,
             "label": "stopSequences",
             "quick_enabled": true,
@@ -1131,7 +1131,7 @@
         "properties": {
             "quick_value": 250,
             "x": -2610.8994,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 2005.6093,
             "label": "maxTokens",
             "quick_enabled": true,
@@ -1194,7 +1194,7 @@
         "properties": {
             "quick_value": "",
             "x": 6443.165,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -1534.2168,
             "label": "output",
             "quick_enabled": true,
@@ -1257,7 +1257,7 @@
         "properties": {
             "quick_value": "",
             "x": 6164.836,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 713.6339,
             "label": "newChatlog",
             "quick_enabled": true,
@@ -1579,7 +1579,7 @@
         "properties": {
             "quick_value": false,
             "x": -4234.4155,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -3817.884,
             "label": "nsfwFilter",
             "quick_enabled": true,
@@ -1920,7 +1920,7 @@
         "properties": {
             "quick_value": false,
             "x": -1401.4808,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -3614.8206,
             "label": "nsfw-detected",
             "quick_enabled": true,
@@ -2060,7 +2060,7 @@
         "properties": {
             "quick_value": true,
             "x": -1021.34735,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 70.16104,
             "label": "keep alive",
             "quick_enabled": true,
@@ -2430,7 +2430,7 @@
             "quick_frequencyPenalty": 0,
             "y": 842.1218,
             "quick_message": "",
-            "quick_enabled": true,
+            "quick_enabled": false,
             "quick_stream": false,
             "quick_tools": "",
             "quick_seed": 0
@@ -3121,7 +3121,7 @@
         "properties": {
             "quick_value": 4096,
             "x": 989.47,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -218.39436,
             "label": "context",
             "quick_enabled": true,
@@ -3184,7 +3184,7 @@
         "properties": {
             "quick_value": "",
             "x": 6031.472,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -813.33203,
             "label": "ollama error",
             "quick_enabled": true,
@@ -3201,8 +3201,8 @@
             },
             {
                 "connected": {
-                    "label": "",
-                    "nodeID": 0
+                    "label": "output",
+                    "nodeID": -1723395990
                 },
                 "label": "enabled",
                 "ioState": "input",
@@ -3487,7 +3487,7 @@
             "quick_frequencyPenalty": 0,
             "y": 2994.169,
             "quick_message": "",
-            "quick_enabled": true,
+            "quick_enabled": false,
             "quick_maxCompletionTokens": 1024,
             "quick_stream": false,
             "quick_streamOptions": "",
@@ -4006,7 +4006,7 @@
         "properties": {
             "quick_value": "",
             "x": 3026.9194,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 3316.583,
             "label": "openai error",
             "quick_enabled": true,
@@ -4063,7 +4063,7 @@
         "properties": {
             "quick_value": "",
             "x": 3197.5146,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 580.94073,
             "label": "claude error",
             "quick_enabled": true,
@@ -4140,9 +4140,9 @@
         "properties": {
             "quick_target": "openai:",
             "quick_input": "",
-            "x": 1043.663,
+            "x": 790.85077,
             "quick_replacement": "",
-            "y": 2692.8804,
+            "y": 2539.4885,
             "quick_enabled": true
         }
     }

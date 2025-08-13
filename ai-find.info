@@ -1,0 +1,9 @@
+﻿{
+    "name":  "ai-find",
+    "short-description":  "Find and highlight nodes with natural language.",
+    "markdown-readme":  "",
+    "version":  1,
+    "version-date":  "13 AUG 2025",
+    "category":"TOOL",
+    "dependencies":
+}

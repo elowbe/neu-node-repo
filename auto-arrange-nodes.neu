@@ -1,0 +1,136 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": "onClick"},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "inputs",
+                "ioState": "input",
+                "type": "org.json.JSONObject",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "script",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "outputs",
+                "ioState": "output",
+                "type": "org.json.JSONObject",
+                "required": false
+            }
+        ],
+        "id": 2031747334,
+        "class": "com.loom.graph.nodes.GroovyNode",
+        "properties": {
+            "quick_script": "import com.loom.graph.*;\nimport com.loom.*;\nimport com.loom.graph.nodes.*;\n\n//com.neoloom.main.Neu.neu.createNewFile();\noutputs.put(\"graph\", com.neoloom.main.Neu.neu.mainNodeGraph.graph);\noutputs.put(\"neu-graph\", com.neoloom.main.Neu.neu.mainNodeGraph);\n//outputs.put(\"graph\", new Graph());\ncom.neoloom.main.Neu.neu.mainNodeGraph.createHistoricRecord(true);",
+            "x": 50,
+            "quick_inputs": {},
+            "y": 100,
+            "quick_enabled": true,
+            "script": ""
+        }
+    },
+    {
+        "attributes": [
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": false
+            },
+            {
+                "connected": {"label": "_sync"},
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "outputs",
+                    "nodeID": 2031747334
+                },
+                "label": "inputs",
+                "ioState": "input",
+                "type": "org.json.JSONObject",
+                "required": false
+            },
+            {
+                "connected": {"label": ""},
+                "label": "script",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "outputs",
+                "ioState": "output",
+                "type": "org.json.JSONObject",
+                "required": false
+            }
+        ],
+        "id": 2031747335,
+        "class": "com.loom.graph.nodes.GroovyNode",
+        "properties": {
+            "quick_script": "import com.neoloom.main.NeuGraph;\nNeuGraph neuGraph = inputs.get(\"neu-graph\");\n\nnew Thread(()->{\n    Thread.sleep(250);\n    neuGraph.autoArrangeNodes();\n}).start();",
+            "x": 1100,
+            "y": 100,
+            "quick_enabled": true,
+            "script": ""
+        }
+    }
+]}
