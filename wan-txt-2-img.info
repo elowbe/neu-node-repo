@@ -3,5 +3,7 @@
     "short-description":  "Wan Txt 2 Img",
     "markdown-readme":  "# WAN Text-to-Image\n\nText-to-image generation pipeline with SD/Flux-style components.\n\n## Inputs\n- **text**: Prompt for CLIP encode.\n- **steps / sampler_name / scheduler / denoise / cfg**: Sampler controls.\n- **seed**: Long/Integer.\n- **clip/unet/vae/weight_dtype**: Model selections.\n- **width / height / batch_size**: Output size and count.\n- **filename_prefix**: Save prefix.\n\n## Outputs\n- **images**: ArrayList of images.\n- **image-0**: First image.\n\n## Tips\nAdjust `steps` and `cfg` for fidelity; experiment with samplers for style/speed.",
     "version":  1,
-    "version-date":  "12 AUG 2024"
+    "version-date":  "12 AUG 2024",
+    "dependencies":["comfyui"],
+    "author":"kingroka"
 }
