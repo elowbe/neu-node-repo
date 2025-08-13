@@ -61,7 +61,7 @@
         "properties": {
             "quick_value": "A close-up of a young woman smiling gently in the rain, raindrops glistening on her face and eyelashes. The video captures the delicate details of her expression and the water droplets, with soft light reflecting off her skin in the rainy atmosphere.",
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 100,
             "label": "positive_prompt",
             "quick_enabled": true,
@@ -121,7 +121,7 @@
         "properties": {
             "quick_value": "",
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 846,
             "label": "negative_prompt",
             "quick_enabled": true,
@@ -259,7 +259,7 @@
         "properties": {
             "quick_value": 368,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 1592,
             "label": "width",
             "quick_enabled": true,
@@ -319,7 +319,7 @@
         "properties": {
             "quick_value": 768,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 2352,
             "label": "height",
             "quick_enabled": true,
@@ -379,7 +379,7 @@
         "properties": {
             "quick_value": 3,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 3112,
             "label": "length (s)",
             "quick_enabled": true,
@@ -603,11 +603,11 @@
         "properties": {
             "quick_value": "detailz-wan.safetensors",
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 3872,
             "label": "lora",
             "quick_enabled": true,
-            "type": "[Ljava.lang.String;"
+            "type": "java.lang.String"
         }
     },
     {
@@ -741,7 +741,7 @@
         "properties": {
             "quick_value": 1,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 4650,
             "label": "lora_str",
             "quick_enabled": true,
@@ -804,7 +804,7 @@
         "properties": {
             "quick_value": "",
             "x": 4250,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 100,
             "label": "video",
             "quick_enabled": true,
@@ -961,7 +961,7 @@
         "properties": {
             "quick_value": -1,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 5410,
             "label": "seed",
             "quick_enabled": true,
@@ -1228,7 +1228,7 @@
         "properties": {
             "quick_value": 8,
             "x": 50,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 7257.25,
             "label": "steps",
             "quick_enabled": true,
@@ -2174,7 +2174,7 @@
         "properties": {
             "quick_value": "",
             "x": 3206.9397,
-            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": 5286.1294,
             "label": "lora_",
             "quick_enabled": true,
