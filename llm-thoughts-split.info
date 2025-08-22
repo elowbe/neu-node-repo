@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "",
+  "markdown-readme": "# DeepSeek Split\n\nA utility that extracts the hidden thinking content from model responses and returns the final answer separately.\n\n## Overview\nThis graph parses text that contains `<think>...<\/think>` and/or other delimiters, producing clean output strings for both the private chain-of-thought and the user-visible answer.\n\n## Inputs\n- **input**: String. The raw LLM output to parse.\n- **startPhrase**: String. Default `<think>`.\n- **endPhrase**: String. Default `<\/think>`.\n- **includeDelimiters**: Boolean. Whether to keep the delimiters in the extraction.\n- **enabled/sync**: Standard control signals.\n\n## Outputs\n- **output**: String. The extracted text (without or with delimiters depending on configuration).\n- **error**: Optional error output.\n\n## Usage\n1. Connect `input` to your LLM output.\n2. Set `startPhrase` and `endPhrase` to the markers you want to extract.\n3. Use multiple extractors if you need both inner `<think>` and the remainder.\n\n```text\nInput: <think>reasoning<\/think> Final answer\nOutput: reasoning (includeDelimiters=false)\n```",
+  "name": "LLM Thoughts Split",
+  "category": "LLM",
+  "short-description": "Seperate thoughts and answer of a thinking models.",
+  "version": "1",
+  "dependencies": []
+}

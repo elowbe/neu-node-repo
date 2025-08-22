@@ -2,7 +2,7 @@
   "featured": false,
   "author": "kingroka",
   "markdown-readme": "",
-  "name": "qr-code-generator",
+  "name": "QR Code Generator",
   "category": "TOOL",
   "short-description": "Convert text to a QR Code",
   "version": "1",

@@ -1,9 +1,15 @@
-﻿{
-    "name":  "ai-find",
-    "short-description":  "Find and highlight nodes with natural language.",
-    "markdown-readme":  "",
-    "version":  1,
-    "version-date":  "13 AUG 2025",
-    "category":"TOOL",
-    "dependencies":["ollama","claude","openai","groq"]
+{
+  "featured": false,
+  "author": "",
+  "markdown-readme": "",
+  "name": "AI Find",
+  "category": "TOOL",
+  "short-description": "Find and highlight nodes with natural language.",
+  "version": "1",
+  "dependencies": [
+    "ollama",
+    "claude",
+    "openai",
+    "groq"
+  ]
 }

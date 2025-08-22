@@ -2,7 +2,7 @@
   "featured": false,
   "author": "kingroka",
   "markdown-readme": "ComfyUI Dependencies: \nhttps://github.com/kijai/ComfyUI-DepthAnythingV2",
-  "name": "depth-anything",
+  "name": "Depth Anything",
   "category": "DEPTH-ANYTHING",
   "short-description": "Generate depthmap from image.",
   "version": "1",
