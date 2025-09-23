@@ -1,0 +1,646 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -216989544
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": -1975517034,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": "",
+            "x": -1223.4434,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "y": 51.139313,
+            "label": "video",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "images",
+                "ioState": "output",
+                "type": "java.util.ArrayList",
+                "required": true
+            },
+            {
+                "label": "image-0",
+                "ioState": "output",
+                "type": "java.awt.image.BufferedImage",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "1.(SeedVR2): batch_size",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 459408785
+                },
+                "label": "1.(SeedVR2): seed",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "1.(SeedVR2): model",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 342819193
+                },
+                "label": "1.(SeedVR2): new_resolution",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "1.(SeedVR2): preserve_vram",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): custom_height",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): force_rate",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): custom_width",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): select_every_nth",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): frame_load_cap",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): format",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -1975517034
+                },
+                "label": "3.(VHS_LoadVideo): video",
+                "ioState": "input",
+                "type": "com.loom.Video",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "3.(VHS_LoadVideo): skip_first_frames",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): save_output",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): filename_prefix",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): loop_count",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): pix_fmt",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): save_metadata",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): crf",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): trim_to_audio",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): format",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "4.(VHS_VideoCombine): pingpong",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            }
+        ],
+        "id": -1127939943,
+        "class": "com.loom.graph.nodes.AutoComfyUIWorkflowNode",
+        "properties": {
+            "quick_3.(VHS_LoadVideo): video": "",
+            "quick_3.(VHS_LoadVideo): select_every_nth": 1,
+            "quick_3.(VHS_LoadVideo): skip_first_frames": 0,
+            "title": "seedvr2.json",
+            "quick_4.(VHS_VideoCombine): pingpong": false,
+            "quick_4.(VHS_VideoCombine): save_output": true,
+            "quick_1.(SeedVR2): preserve_vram": false,
+            "quick_4.(VHS_VideoCombine): crf": 19,
+            "quick_enabled": true,
+            "quick_4.(VHS_VideoCombine): save_metadata": true,
+            "quick_3.(VHS_LoadVideo): custom_width": 0,
+            "quick_4.(VHS_VideoCombine): filename_prefix": "seedvr2",
+            "workflow": {
+                "1": {
+                    "class_type": "SeedVR2",
+                    "inputs": {
+                        "images": [
+                            "3",
+                            0
+                        ],
+                        "batch_size": 1,
+                        "seed": 4520,
+                        "model": "seedvr2_ema_3b_fp8_e4m3fn.safetensors",
+                        "new_resolution": 1072,
+                        "preserve_vram": false
+                    },
+                    "_meta": {"title": "SeedVR2 Video Upscaler"}
+                },
+                "3": {
+                    "class_type": "VHS_LoadVideo",
+                    "inputs": {
+                        "custom_height": 0,
+                        "force_rate": 0,
+                        "custom_width": 0,
+                        "select_every_nth": 1,
+                        "frame_load_cap": 0,
+                        "format": "AnimateDiff",
+                        "video": "a9382caf-2048-4bcf-8b3f-403290fc789d.gif",
+                        "skip_first_frames": 0
+                    },
+                    "_meta": {"title": "Load Video (Upload) 🎥🅥🅗🅢"}
+                },
+                "4": {
+                    "class_type": "VHS_VideoCombine",
+                    "inputs": {
+                        "save_output": true,
+                        "filename_prefix": "seedvr2",
+                        "images": [
+                            "1",
+                            0
+                        ],
+                        "loop_count": 0,
+                        "pix_fmt": "yuv420p",
+                        "save_metadata": true,
+                        "crf": 19,
+                        "trim_to_audio": false,
+                        "format": "video/h264-mp4",
+                        "frame_rate": [
+                            "5",
+                            0
+                        ],
+                        "pingpong": false
+                    },
+                    "_meta": {"title": "Video Combine 🎥🅥🅗🅢"}
+                },
+                "5": {
+                    "class_type": "VHS_VideoInfo",
+                    "inputs": {"video_info": [
+                        "3",
+                        3
+                    ]},
+                    "_meta": {"title": "Video Info 🎥🅥🅗🅢"}
+                }
+            },
+            "quick_3.(VHS_LoadVideo): frame_load_cap": 0,
+            "quick_3.(VHS_LoadVideo): format": "AnimateDiff",
+            "quick_3.(VHS_LoadVideo): custom_height": 0,
+            "quick_4.(VHS_VideoCombine): trim_to_audio": false,
+            "quick_4.(VHS_VideoCombine): format": "video/h264-mp4",
+            "quick_1.(SeedVR2): seed": 4520,
+            "quick_4.(VHS_VideoCombine): pix_fmt": "yuv420p",
+            "quick_1.(SeedVR2): new_resolution": 1072,
+            "quick_1.(SeedVR2): model": "seedvr2_ema_3b_fp8_e4m3fn.safetensors",
+            "quick_4.(VHS_VideoCombine): loop_count": 0,
+            "x": -114.068115,
+            "y": -1116.0785,
+            "quick_3.(VHS_LoadVideo): force_rate": 0,
+            "quick_1.(SeedVR2): batch_size": 1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "image-0",
+                    "nodeID": -1127939943
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 1714291064,
+        "class": "com.loom.graph.nodes.ModuleOutputNode",
+        "properties": {
+            "quick_value": "",
+            "x": 1170.185,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "y": -710.1199,
+            "label": "upscaled",
+            "quick_enabled": true,
+            "type": "com.loom.Video"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "value",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": 342819193,
+        "class": "com.loom.graph.nodes.ModuleInputNode",
+        "properties": {
+            "quick_value": 1072,
+            "x": -1241.687,
+            "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nAny\n",
+            "y": -640.94415,
+            "label": "new resolution",
+            "quick_enabled": true,
+            "type": "java.lang.Number"
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.Double",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max",
+                "ioState": "input",
+                "type": "java.lang.Integer",
+                "required": true
+            }
+        ],
+        "id": 459408785,
+        "class": "com.loom.graph.nodes.RandomIntegerNode",
+        "properties": {
+            "x": -883.5769,
+            "y": -1468.1869,
+            "quick_enabled": true,
+            "quick_min": 0,
+            "quick_max": 4999
+        }
+    }
+]}

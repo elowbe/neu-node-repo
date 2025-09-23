@@ -1,0 +1,10 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "Transfer & Try",
+  "category": "TOOL",
+  "short-description": "Transfer pose and clothes using Qwen Edit",
+  "version": "1.0",
+  "dependencies": ["ComfyUI-Easy-Use"]
+}

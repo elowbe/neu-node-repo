@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Flux Krea Dev\n\nText-to-image development graph using FLUX/SD-style components (CLIP, UNet, VAE, schedulers). Designed for quick iteration with explicit controls.\n\n## Inputs\n- **width/height**: Integer. Canvas size.\n- **batch_size**: Integer. Images per run.\n- **steps**: Integer. Sampler steps.\n- **sampler_name / scheduler / denoise / cfg**: Sampler controls.\n- **seed**: Long/Integer. Determinism.\n- **clip_name1/clip_name2**: Text encoders.\n- **unet_name / weight_dtype**: Model + precision.\n- **vae_name**: VAE for decode/encode.\n- **filename_prefix**: Save prefix for outputs.\n\n## Outputs\n- **images**: ArrayList of generated images.\n- **image-0**: First image for quick wiring.\n\n## Notes\n- Ensure the referenced models are available by name.\n- Tune `cfg`, `steps`, and `sampler_name` for quality/performance tradeoffs.\n\n```text\nTypical: steps=28, sampler=Euler, cfg=4.5, seed=auto\n```",
+  "name": "Flux Krea Dev",
+  "category": "FLUX",
+  "short-description": "Generate images from text with Flux Krea Dev.",
+  "version": "1",
+  "dependencies": ["comfyui"]
+}

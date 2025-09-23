@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "QR Code Generator",
+  "category": "TOOL",
+  "short-description": "Convert text to a QR Code",
+  "version": "1",
+  "dependencies": []
+}

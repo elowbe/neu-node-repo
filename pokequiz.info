@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "Pokequiz",
+  "category": "TOOL",
+  "short-description": "A simple pokemon quiz.",
+  "version": "",
+  "dependencies": []
+}

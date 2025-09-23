@@ -1,0 +1,747 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "success",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "message",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "key",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "onClick",
+                    "nodeID": -548838675
+                },
+                "label": "data",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "value",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": true
+            }
+        ],
+        "id": -551001368,
+        "class": "com.loom.graph.nodes.GlobalNode",
+        "properties": {
+            "quick_key": "nasa_fetch",
+            "x": 648.8725,
+            "y": 756.1429,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "success",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "message",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "key",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "value",
+                    "nodeID": -550477078
+                },
+                "label": "data",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "value",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": true
+            }
+        ],
+        "id": -550673687,
+        "class": "com.loom.graph.nodes.GlobalNode",
+        "properties": {
+            "quick_key": "nasa_api_key",
+            "x": -1023.15533,
+            "y": -1789.9822,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "success",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "message",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "variableName",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "value",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "exists",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "allVariables",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": true
+            }
+        ],
+        "id": -550477078,
+        "class": "com.loom.graph.nodes.EnvironmentVariableNode",
+        "properties": {
+            "quick_variableName": "NASA_API_KEY",
+            "x": -1823.1554,
+            "y": -1789.9822,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "title",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "x",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "y",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": -550280469,
+        "class": "com.loom.graph.nodes.UiWindowNode",
+        "properties": {
+            "quick_min-height": -1,
+            "quick_title": "NASA APOD Viewer",
+            "quick_max-width": -1,
+            "x": -1507.3588,
+            "y": 498.76788,
+            "quick_min-width": -1,
+            "quick_y": 0,
+            "quick_enabled": true,
+            "quick_x": 0,
+            "quick_max-height": -1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": -550280469
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": -51420434
+                },
+                "label": "script",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "exception_log",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -549428500,
+        "class": "com.loom.graph.nodes.UiCanvasNode",
+        "properties": {
+            "quick_script": "// UiCanvas script skeleton (Java-formatted Groovy)\n// You can implement any of the Canvas callbacks below.\n// Available context properties:\n//   - uiWidth  (int): current canvas width\n//   - uiHeight (int): current canvas height\n//   - uiDisplay: the CanvasDisplay instance (optional)\n//   - globals : Map<String,Object> shared across the graph (GlobalNode-compatible)\n// Common imports are available: java.awt.*, java.awt.event.*,\n// com.jinteractive.gui.*, com.jinteractive.main.*, com.loom.graph.*\n// Exceptions are logged to the 'exception_log' output (unique errors only)\n\nvoid tick(Float delta){\n    // Called every frame with delta time in seconds (approx).\n}\n\nvoid draw(Graphics2D g2d){\n    // Example: clear background (uncomment to use)\n    // g2d.setColor(java.awt.Color.BLACK);\n    // g2d.fillRect(0, 0, (uiWidth as int), (uiHeight as int));\n}\n\nvoid destroy(){\n    // Called when the canvas is destroyed.\n}\n\nvoid mouseDown(ButtonType button){\n    // Mouse button pressed.\n}\n\nvoid mouseUp(ButtonType button){\n    // Mouse button released.\n}\n\nvoid scroll(int amount){\n    // Mouse wheel scrolled; positive is scroll up in most cases.\n}\n\nvoid keyDown(KeyEvent e){\n    // Key pressed; check e.getKeyCode().\n}\n\nvoid keyUp(KeyEvent e){\n    // Key released.\n}",
+            "quick_height": 480,
+            "x": 1234.9623,
+            "y": -172.60712,
+            "quick_width": 640,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": -550280469
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "text",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "onClick",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": false
+            }
+        ],
+        "id": -548838675,
+        "class": "com.loom.graph.nodes.UiButtonNode",
+        "properties": {
+            "quick_text": "Random APOD",
+            "x": -151.12752,
+            "y": 756.1429,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "processed-output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": -51420434,
+        "class": "com.loom.graph.nodes.TextNode",
+        "properties": {
+            "quick_input": "import groovy.transform.Field\nimport org.json.JSONObject\nimport org.json.JSONArray\n\n@Field boolean initd=false\n@Field boolean loading=false\n@Field String errorText=null\n@Field java.awt.image.BufferedImage img=null\n@Field String title=\"\"\n@Field String date=\"\"\n@Field String copyright=null\n\nvoid init(){ initd=true }\n\nString httpGet(String url){\n  java.io.InputStream is=null\n  java.io.InputStreamReader r=null\n  java.io.BufferedReader br=null\n  try{\n    is=new java.net.URL(url).openStream()\n    r=new java.io.InputStreamReader(is, java.nio.charset.StandardCharsets.UTF_8)\n    br=new java.io.BufferedReader(r)\n    StringBuilder sb=new StringBuilder()\n    String line\n    while((line=br.readLine())!=null){ sb.append(line) }\n    return sb.toString()\n  }catch(Throwable ex){ errorText=String.valueOf(ex.getMessage()); return null }\n  finally{\n    try{ if(br!=null) br.close() }catch(Throwable ignore){}\n    try{ if(r!=null) r.close() }catch(Throwable ignore){}\n    try{ if(is!=null) is.close() }catch(Throwable ignore){}\n  }\n}\n\njava.awt.image.BufferedImage loadImage(String url){\n  try{ return javax.imageio.ImageIO.read(new java.net.URL(url)) }\n  catch(Throwable ex){ errorText=String.valueOf(ex.getMessage()); return null }\n}\n\nvoid fetchRandom(){\n  if(loading) return\n  loading=true\n  errorText=null\n  img=null\n  title=\"\"\n  date=\"\"\n  copyright=null\n  new Thread({\n    try{\n      String key = (globals!=null? (globals.get(\"nasa_api_key\") as String): null)\n      if(key==null || key.isEmpty()){ throw new RuntimeException(\"Missing NASA API key in globals: nasa_api_key\") }\n      String url = \"https://api.nasa.gov/planetary/apod?count=1&thumbs=true&api_key=\"+java.net.URLEncoder.encode(key, \"UTF-8\")\n      for(int attempts=0; attempts<4; attempts++){\n        String resp=httpGet(url)\n        if(resp==null) throw new RuntimeException(\"No response\")\n        JSONArray arr=new JSONArray(resp)\n        if(arr.length()>0){\n          JSONObject o=arr.getJSONObject(0)\n          String mt=o.optString(\"media_type\",\"image\")\n          title=o.optString(\"title\",\"Astronomy Picture of the Day\")\n          date=o.optString(\"date\",\"\")\n          copyright=o.has(\"copyright\")?o.optString(\"copyright\",null):null\n          if(\"image\".equalsIgnoreCase(mt)){\n            String iu = o.has(\"hdurl\")?o.optString(\"hdurl\", null):null\n            if(iu==null||iu.isEmpty()) iu=o.optString(\"url\", null)\n            img=loadImage(iu)\n            if(img!=null) break\n          } else if(\"video\".equalsIgnoreCase(mt)){\n            String thumb=o.optString(\"thumbnail_url\", null)\n            if(thumb!=null){ img=loadImage(thumb); if(img!=null) break }\n          }\n        }\n      }\n      if(img==null) throw new RuntimeException(\"Failed to load image after retries\")\n    }catch(Throwable ex){ errorText=String.valueOf(ex.getMessage()) }\n    finally{ loading=false }\n  }).start()\n}\n\nvoid tick(Float delta){\n  if(!initd) init()\n  if(globals!=null){\n    Object trig=globals.get(\"nasa_fetch\")\n    if(Boolean.TRUE.equals(trig)){\n      try{ globals.put(\"nasa_fetch\", Boolean.FALSE) }catch(Throwable ignore){}\n      fetchRandom()\n    }\n  }\n}\n\nvoid draw(Graphics2D g2d){\n  g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON)\n  g2d.setColor(new java.awt.Color(10,14,20))\n  g2d.fillRect(0,0,uiWidth,uiHeight)\n  g2d.setColor(new java.awt.Color(230,240,255))\n  g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.BOLD, 18))\n  g2d.drawString(\"NASA Astronomy Picture of the Day\", 12, 24)\n  g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.PLAIN, 13))\n  if(errorText!=null){\n    g2d.setColor(new java.awt.Color(255,140,140))\n    g2d.drawString(\"Error: \"+errorText, 12, 46)\n    return\n  }\n  if(loading){ g2d.setColor(new java.awt.Color(200,210,230)); g2d.drawString(\"Loading...\", 12, 46) }\n  int top=54; int pad=12; int availW=uiWidth- pad*2; int availH=uiHeight - top - 60\n  if(img!=null){\n    int iw=img.getWidth(), ih=img.getHeight()\n    double s=Math.min(1.0d, Math.min((double)availW/Math.max(1,iw), (double)availH/Math.max(1,ih)))\n    int dw=(int)Math.round(iw*s); int dh=(int)Math.round(ih*s); int dx=pad + (availW-dw)/2; int dy=top + (availH-dh)/2\n    g2d.drawImage(img, dx, dy, dw, dh, null)\n  } else {\n    g2d.setColor(new java.awt.Color(80,90,110))\n    g2d.drawRect(pad, top, availW, availH)\n    g2d.drawString(\"Press 'Random APOD'\", 12, 46)\n  }\n  g2d.setColor(new java.awt.Color(210,220,240))\n  String meta = (title!=null?title:\"\") + (date!=null && date.length()>0? \" \u2014 \"+date: \"\") + (copyright!=null? \" \u2014 © \"+copyright: \"\")\n  java.awt.Font f=new java.awt.Font(\"SansSerif\", java.awt.Font.PLAIN, 12)\n  g2d.setFont(f)\n  g2d.drawString(meta, 12, uiHeight-12)\n}\n\nvoid destroy(){}\nvoid mouseDown(ButtonType b){}\nvoid mouseUp(ButtonType b){}\nvoid scroll(int a){}\nvoid keyDown(KeyEvent e){}\nvoid keyUp(KeyEvent e){}",
+            "x": -236.34839,
+            "y": -805.146,
+            "text": "",
+            "quick_enabled": true
+        }
+    }
+]}

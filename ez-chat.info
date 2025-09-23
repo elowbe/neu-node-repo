@@ -1,0 +1,15 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "# EZ Chat\n\nUniversal chat orchestration graph with support for popular providers (e.g., Claude). Handles messages, system prompts, chat history, and streaming.\n\n## Inputs\n- **message**: String. User message (required).\n- **system**: String. Optional system prompt.\n- **chatlog**: JSONArray. Prior messages to preserve context.\n- **model**: String. Model identifier (e.g., `claude-3-5-sonnet`).\n- **maxTokens**: Integer. Generation cap.\n- **temperature**: Double. Creativity.\n- **topP/topK**: Nucleus/top-k sampling.\n- **stopSequences**: JSONArray. Hard stops.\n- **metadata**: JSONObject. Provider extras.\n- **stream**: Boolean. Enable server-streamed responses.\n\n## Outputs\n- **streamOutput**: String. Incremental tokens when streaming.\n- **finalOutput**: String. Complete assistant reply.\n- **newChatlog**: JSONArray. Updated conversation.\n\n## Quick Start\n1. Provide `apiKey` and `model`.\n2. Send `message` (and optional `system`, `chatlog`).\n3. Toggle `stream` for token-by-token output.\n\n```json\n{\"message\": \"Hello!\", \"model\": \"claude-3-5-sonnet\", \"stream\": true}\n```",
+  "name": "EZ Chat",
+  "category": "LLM",
+  "short-description": "Chat with OpenAI, Claude, Ollama, or Groq",
+  "version": "1",
+  "dependencies": [
+    "ollama",
+    "claude",
+    "groq",
+    "openai"
+  ]
+}

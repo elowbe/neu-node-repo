@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Upscale Video (SeedVR2)\n\nVideo upscaling pipeline built on SeedVR2 and VHS video IO.\n\n## Inputs\n- **video**: Video handle/path.\n- **model**: String. SeedVR2 model name.\n- **new_resolution**: Integer. Target height/width depending on node.\n- **preserve_vram**: Boolean. Memory-optimized path.\n- **seed / batch_size**: Generation controls.\n- **VHS_LoadVideo**: Optional frame rate/size overrides.\n\n## Outputs\n- **image-0 / images**: Frames for preview/processing.\n- Saved frames/video via Save nodes (configure prefixes/paths).\n\n## Tips\nUse the comparison display node to visually inspect improvements frame-by-frame.",
+  "name": "Upscale Video SeedVR2",
+  "category": "SEEDVR",
+  "short-description": "Upscale videos width Seedvr2.",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI-SeedVR2_VideoUpscaler",
+    "ComfyUI-VideoHelperSuite"
+  ]
+}

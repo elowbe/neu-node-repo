@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "Qwen Image Edit 4Step",
+  "category": "QWEN",
+  "short-description": "Edit images with Qwen",
+  "version": "1",
+  "dependencies": []
+}

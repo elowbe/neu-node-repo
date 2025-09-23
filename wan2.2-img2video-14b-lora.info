@@ -1,0 +1,13 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "# WAN 2.2 Img2Video (14B, LoRA)\n\nImage-to-video generation using WAN 2.2 14B with LoRA selection.\n\n## Inputs\n- **image**: BufferedImage. Starting frame/reference.\n- **wan-model-type**: Select. Chooses precision/model variant (e.g., `fp8_e4m3fn`).\n- **unet_name / weight_dtype**: Resolved via model selector.\n- **seed / steps / scheduler / sampler / cfg**: Generation controls.\n- **resolution / fps / duration**: Video parameters (via VHS/Save nodes where applicable).\n\n## Outputs\n- **images/image-0**: Generated frames for preview.\n- Saved video/frames via save nodes.\n\n## Notes\nEnsure WAN weights are present and names match the selector outputs.",
+  "name": "WAN2.2 img2video 14b LORA",
+  "category": "WAN",
+  "short-description": "Wan2.2 Img2video 14B Lora",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI-VideoHelperSuite"
+  ]
+}

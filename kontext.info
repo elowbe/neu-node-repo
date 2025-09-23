@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Kontext\n\nGraph to introspect a `.neu` workflow and emit human-readable documentation.\n\n## What it does\n- Collects node metadata (labels, IO, types)\n- Aggregates into a single documentation string\n- Optionally displays the result in an alert\n\n## Outputs\n- **documentation**: String. Markdown/text summary of the loaded graph.\n- **nodeCount**: Integer. Number of nodes discovered.\n- **error**: Optional error text.\n\n## Usage\nWire any workflow into Kontext\u2019s analysis path or open alongside a graph to generate docs you can copy into README files.",
+  "name": "Flux Kontext",
+  "category": "FLUX",
+  "short-description": "Edit images with Flux Kontext.",
+  "version": "1",
+  "dependencies": ["comfyui"]
+}

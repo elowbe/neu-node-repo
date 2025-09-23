@@ -1,0 +1,15 @@
+{
+  "featured": false,
+  "author": "",
+  "markdown-readme": "",
+  "name": "AI Find",
+  "category": "TOOL",
+  "short-description": "Find and highlight nodes with natural language.",
+  "version": "1",
+  "dependencies": [
+    "ollama",
+    "claude",
+    "openai",
+    "groq"
+  ]
+}

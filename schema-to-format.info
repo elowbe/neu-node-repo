@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Schema to Format\n\nConverts a simple class-like skeleton into a JSON Schema object.\n\n## Overview\nAccepts lines such as:\n```text\nclass CountryInfo;\n*name:string\n*type:string\nlanguages: array[string]\n```\nOutputs a JSON Schema with required fields and proper array typing.\n\n## Inputs\n- **skeleton**: String. Class/property skeleton text.\n\n## Outputs\n- **schema**: JSONObject. JSON Schema for the input.\n\n## Notes\n- Asterisk `*` marks a property as required.\n- `array[T]` maps to `{ type: 'array', items: { type: T } }`.\n- Supported primitives: string, number, integer, boolean, object, array.",
+  "name": "Schema to Format",
+  "category": "LLM",
+  "short-description": "Format Ollama to output a JSON object.",
+  "version": "1",
+  "dependencies": []
+}

@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# WAN Prompt Enhancer\n\nEnhances a user-provided video prompt with cinematic and stylistic details using an LLM.\n\n## Inputs\n- **model**: String. Chat model (e.g., local Ollama/remote).\n- **message**: String. User's rough prompt.\n- **system**: String. Prewired style guide (see embedded instructions).\n\n## Outputs\n- **finalOutput**: String. Enhanced prompt.\n- **streamOutput/newChatlog**: Optional streaming and chat state.\n\n## Usage\nWire `message` and choose a `model`. The node emits a richer, production-ready prompt for downstream video generation.",
+  "name": "WAN Prompt Enhancer",
+  "category": "WAN",
+  "short-description": "Enhance your video prompts for the WAN video model.",
+  "version": "1",
+  "dependencies": ["ollama"]
+}

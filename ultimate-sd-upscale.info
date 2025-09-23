@@ -1,0 +1,13 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Ultimate SD Upscale\n\nAdvanced SD-based upscaling with granular sampler and model controls.\n\n## Inputs\n- **image(s)**: BufferedImage(s). Optional conditioning.\n- **steps / sampler_name / scheduler / denoise / cfg**: Sampler controls.\n- **seed**: Long/Integer.\n- **clip_name / unet_name / weight_dtype / vae_name**: Model selections.\n- **width / height / batch_size**: Target dimensions.\n- **filename_prefix**: Save prefix.\n\n## Outputs\n- **images**: ArrayList. Generated/upscaled images.\n- **image-0**: First image.\n\n## Tips\nStart with moderate `steps` and `cfg`, then tune for quality and speed.",
+  "name": "Ultimate SD Upscale",
+  "category": "SD",
+  "short-description": "Upscale images with Ultimate Sd Upscale.",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI_UltimateSDUpscale"
+  ]
+}

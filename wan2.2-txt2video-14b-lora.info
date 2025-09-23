@@ -1,0 +1,13 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "# WAN 2.2 Txt2Video (14B, LoRA)\n\nText-to-video pipeline using WAN 2.2 14B with LoRA model selection and scheduler controls.\n\n## Inputs\n- **positive_prompt / negative_prompt**: Strings.\n- **seed**: Long/Integer (helper seed module).\n- **wan-model-type**: Select (e.g., `fp8_e4m3fn`).\n- **unet_name / weight_dtype**: From selector.\n- **steps / scheduler / sampler / cfg**: Generation controls.\n- **resolution / fps / duration**: Video parameters (via VHS/Save nodes).\n\n## Outputs\n- **images/image-0**: Generated frames.\n- Saved video via save nodes (configure prefixes/paths).\n\n## Notes\nVerify WAN weights are available and named correctly.",
+  "name": "WAN2.2 txt2video 14b LORA",
+  "category": "WAN",
+  "short-description": "Wan2 2 Txt2video 14B Lora",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI-VideoHelperSuite"
+  ]
+}

@@ -1,0 +1,373 @@
+{"nodes": [
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "min-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "max-width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "title",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "x",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "y",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            }
+        ],
+        "id": 1067517917,
+        "class": "com.loom.graph.nodes.UiWindowNode",
+        "properties": {
+            "quick_min-height": -1,
+            "quick_title": "2D Particle Solar System (with Asteroid Belt)",
+            "quick_max-width": -1,
+            "x": -1153.5665,
+            "y": -1163.7917,
+            "quick_min-width": -1,
+            "quick_y": 0,
+            "quick_enabled": true,
+            "quick_x": 0,
+            "quick_max-height": -1
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "camera",
+                "ioState": "input",
+                "type": "com.jinteractive.main.Camera",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "font",
+                "ioState": "input",
+                "type": "java.awt.Font",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "ui",
+                    "nodeID": 1067517917
+                },
+                "label": "parent",
+                "ioState": "input",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "parent_",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "label": "ui",
+                "ioState": "output",
+                "type": "com.jinteractive.gui.Display",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "width",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "height",
+                "ioState": "input",
+                "type": "java.lang.Number",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "output",
+                    "nodeID": 1068435423
+                },
+                "label": "script",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": true
+            },
+            {
+                "label": "exception_log",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 1068173278,
+        "class": "com.loom.graph.nodes.UiCanvasNode",
+        "properties": {
+            "quick_script": "// UiCanvas script skeleton (Java-formatted Groovy)\n// You can implement any of the Canvas callbacks below.\n// Available context properties:\n//   - uiWidth  (int): current canvas width\n//   - uiHeight (int): current canvas height\n//   - uiDisplay: the CanvasDisplay instance (optional)\n//   - globals : Map<String,Object> shared across the graph (GlobalNode-compatible)\n// Common imports are available: java.awt.*, java.awt.event.*,\n// com.jinteractive.gui.*, com.jinteractive.main.*, com.loom.graph.*\n// Exceptions are logged to the 'exception_log' output (unique errors only)\n\nvoid tick(Float delta){\n    // Called every frame with delta time in seconds (approx).\n}\n\nvoid draw(Graphics2D g2d){\n    // Example: clear background (uncomment to use)\n    // g2d.setColor(java.awt.Color.BLACK);\n    // g2d.fillRect(0, 0, (uiWidth as int), (uiHeight as int));\n}\n\nvoid destroy(){\n    // Called when the canvas is destroyed.\n}\n\nvoid mouseDown(ButtonType button){\n    // Mouse button pressed.\n}\n\nvoid mouseUp(ButtonType button){\n    // Mouse button released.\n}\n\nvoid scroll(int amount){\n    // Mouse wheel scrolled; positive is scroll up in most cases.\n}\n\nvoid keyDown(KeyEvent e){\n    // Key pressed; check e.getKeyCode().\n}\n\nvoid keyUp(KeyEvent e){\n    // Key released.\n}",
+            "quick_height": 768,
+            "x": 472.5333,
+            "y": -492.4167,
+            "quick_width": 1024,
+            "quick_enabled": true
+        }
+    },
+    {
+        "attributes": [
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "enabled",
+                "ioState": "input",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "label": "enabled_",
+                "ioState": "output",
+                "type": "java.lang.Boolean",
+                "required": true
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "sync",
+                "ioState": "input",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "_sync",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "error",
+                "ioState": "output",
+                "type": "java.lang.Object",
+                "required": false
+            },
+            {
+                "label": "output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "label": "processed-output",
+                "ioState": "output",
+                "type": "java.lang.String",
+                "required": false
+            },
+            {
+                "connected": {
+                    "label": "",
+                    "nodeID": 0
+                },
+                "label": "input",
+                "ioState": "input",
+                "type": "java.lang.String",
+                "required": false
+            }
+        ],
+        "id": 1068435423,
+        "class": "com.loom.graph.nodes.TextNode",
+        "properties": {
+            "quick_input": "import groovy.transform.Field\n\n// 2D Particle Solar System Simulator (Java-formatted Groovy)\n// Units:\n//  - Distance: Astronomical Units (AU)\n//  - Time: years\n//  - Velocity: AU/year\n//  - Gravity uses mu = 4*pi^2 ≈ 39.478 AU^3/yr^2 (Sun-dominated)\n// Controls:\n//  - P: pause/resume\n//  - +/-: speed up / slow down\n//  - R: reset\n//  - Mouse wheel: zoom\n//  - Left-drag: pan (proper local coords via worldMouse - bounds.position)\n//  - 1: toggle planet trails\n//  - 2: toggle asteroid trails\n\n@Field boolean initialized=false\n@Field boolean paused=false\n@Field double timeScale=50.0d\n@Field double mu = 39.47841760435743d // 4*pi^2\n@Field double camScale = 160.0d\n@Field double camX = 0.0d, camY = 0.0d // world center (AU)\n@Field boolean dragging=false\n@Field double dragStartLocalX=0d, dragStartLocalY=0d, camStartX=0d, camStartY=0d\n@Field boolean showPlanetTrails=true\n@Field boolean showAsteroidTrails=false\n\nclass Body {\n  String name\n  double r,g,b\n  double radiusAu\n  double massScale\n  double x,y,vx,vy\n  java.util.ArrayDeque<double[]> trail = new java.util.ArrayDeque<>(256)\n  int trailMax = 200\n}\n\n@Field java.util.List<Body> planets = new java.util.ArrayList<Body>()\n@Field Body sun\n@Field double[][] ast // [N][4] => x,y,vx,vy\n@Field int AST_N = 1500\n@Field int AST_TRAIL_MAX = 24\n@Field java.util.ArrayDeque<double[]> astTrails = new java.util.ArrayDeque<>(4096)\n\nvoid init(){ initialized=true; resetSimulation() }\n\nvoid resetSimulation(){\n  planets.clear()\n  sun = new Body(name:\"Sun\", r:1.0,g:0.9,b:0.2, radiusAu:0.01, x:0,y:0,vx:0,vy:0, massScale:1.0)\n  def mk = { String n, double aAu, double colorR, double colorG, double colorB, double relSize, double ecc=0.02d ->\n    double theta = Math.random()*Math.PI*2\n    double r = aAu*(1.0 - ecc*ecc)/(1.0 + ecc*Math.cos(theta))\n    double x = r*Math.cos(theta)\n    double y = r*Math.sin(theta)\n    double v = Math.sqrt(mu/r)\n    double vx = -v*Math.sin(theta)\n    double vy =  v*Math.cos(theta)\n    new Body(name:n, r:colorR, g:colorG, b:colorB, radiusAu:relSize, x:x,y:y,vx:vx,vy:vy, massScale:1.0)\n  }\n  planets.add(mk(\"Mercury\", 0.387, 0.75,0.75,0.75, 0.0025, 0.2))\n  planets.add(mk(\"Venus\",   0.723, 0.95,0.85,0.60, 0.0040, 0.02))\n  planets.add(mk(\"Earth\",   1.000, 0.60,0.80,1.00, 0.0045, 0.02))\n  planets.add(mk(\"Mars\",    1.524, 1.00,0.50,0.40, 0.0035, 0.08))\n  planets.add(mk(\"Jupiter\", 5.203, 0.90,0.80,0.60, 0.0100, 0.05))\n  planets.add(mk(\"Saturn\",  9.537, 0.90,0.85,0.70, 0.0080, 0.06))\n  planets.add(mk(\"Uranus\", 19.191, 0.70,0.90,0.95, 0.0065, 0.04))\n  planets.add(mk(\"Neptune\",30.068, 0.60,0.75,1.00, 0.0060, 0.03))\n\n  java.util.Random rng = new java.util.Random()\n  AST_N = Math.max(400, AST_N)\n  ast = new double[AST_N][4]\n  for(int i=0;i<AST_N;i++){\n    double a = 2.2 + rng.nextDouble()*1.2\n    double ecc = rng.nextDouble()*0.08\n    double th = rng.nextDouble()*Math.PI*2\n    double r = a*(1.0 - ecc*ecc)/(1.0 + ecc*Math.cos(th))\n    double x = r*Math.cos(th)\n    double y = r*Math.sin(th)\n    double v = Math.sqrt(mu/r)\n    double vx = -v*Math.sin(th)\n    double vy =  v*Math.cos(th)\n    vx *= (0.99 + rng.nextDouble()*0.02)\n    vy *= (0.99 + rng.nextDouble()*0.02)\n    ast[i][0]=x; ast[i][1]=y; ast[i][2]=vx; ast[i][3]=vy;\n  }\n  camScale = 140.0; camX = 0.0; camY = 0.0; timeScale = 50.0; paused = false\n  astTrails.clear(); for(Body p: planets){ p.trail.clear() }\n}\n\nvoid stepSimulation(double dtYears){\n  if(dtYears<=0) return\n  for(int i=0;i<planets.size();i++){\n    Body b = planets.get(i)\n    double dx = -b.x, dy = -b.y\n    double r2 = dx*dx + dy*dy + 1e-9\n    double r = Math.sqrt(r2)\n    double acc = mu / r2\n    double ax = acc * (dx/r), ay = acc * (dy/r)\n    b.vx += ax*dtYears; b.vy += ay*dtYears\n    b.x  += b.vx*dtYears; b.y  += b.vy*dtYears\n    if(showPlanetTrails){\n      b.trail.addLast(new double[]{b.x,b.y})\n      if(b.trail.size()>b.trailMax) b.trail.removeFirst()\n    } else if(!b.trail.isEmpty()) { b.trail.clear() }\n  }\n  for(int i=0;i<AST_N;i++){\n    double x=ast[i][0], y=ast[i][1], vx=ast[i][2], vy=ast[i][3]\n    double dx=-x, dy=-y\n    double r2=dx*dx+dy*dy+1e-9\n    double r=Math.sqrt(r2)\n    double acc = mu / r2\n    double ax=acc*(dx/r), ay=acc*(dy/r)\n    vx += ax*dtYears; vy += ay*dtYears\n    x += vx*dtYears; y += vy*dtYears\n    ast[i][0]=x; ast[i][1]=y; ast[i][2]=vx; ast[i][3]=vy\n    if(showAsteroidTrails){\n      astTrails.addLast(new double[]{x,y})\n      if(astTrails.size()>AST_TRAIL_MAX*AST_N) astTrails.removeFirst()\n    }\n  }\n  if(!showAsteroidTrails && !astTrails.isEmpty()) astTrails.clear()\n}\n\nint sx(double wx){ (int)(uiWidth/2 + (wx - camX)*camScale) }\nint sy(double wy){ (int)(uiHeight/2 + (wy - camY)*camScale) }\n\nvoid drawTrail(Graphics2D g2d, java.util.Deque<double[]> tr, java.awt.Color base){\n  if(tr==null||tr.isEmpty()) return\n  int n = tr.size(), i=0\n  for(double[] p: tr){\n    float a = Math.max(0f, Math.min(1f, (float)i/(float)n))\n    int al = (int)(a*120)\n    g2d.setColor(new java.awt.Color(base.getRed(), base.getGreen(), base.getBlue(), al))\n    g2d.fillRect(sx(p[0]), sy(p[1]), 2, 2)\n    i++\n  }\n}\n\nvoid tick(Float delta){\n  if(!initialized) init()\n  float dt = (delta!=null?delta.floatValue():0.016f)\n  // Handle panning using proper local UI coordinates\n  if(dragging){\n    try{\n      def wm = uiDisplay?.getCamera()?.getWorldMouse()\n      def bp = uiDisplay?.bounds?.position\n      if(wm!=null){\n        double mx = wm.x - (bp!=null?bp.x:0)\n        double my = wm.y - (bp!=null?bp.y:0)\n        double dxLocal = (mx - dragStartLocalX)\n        double dyLocal = (my - dragStartLocalY)\n        camX = camStartX - dxLocal/camScale\n        camY = camStartY - dyLocal/camScale\n      }\n    }catch(Throwable ignore){}\n  }\n  if(!paused){\n    double dtYears = (1.0/365.0/60.0) * dt * Math.max(0.0,timeScale)\n    stepSimulation(dtYears)\n  }\n}\n\nvoid draw(Graphics2D g2d){\n  if(!initialized) init()\n  g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON)\n  g2d.setColor(new java.awt.Color(8,10,14)); g2d.fillRect(0,0,uiWidth,uiHeight)\n  g2d.setColor(new java.awt.Color(20,26,36))\n  int maxR = (int)Math.ceil(Math.max(uiWidth,uiHeight)/camScale)+2\n  for(int k=-maxR;k<=maxR;k++){ g2d.drawLine(sx(k),0,sx(k),uiHeight); g2d.drawLine(0,sy(k),uiWidth,sy(k)) }\n  int sunPx = Math.max(6, (int)(sun.radiusAu*camScale*8))\n  g2d.setColor(new java.awt.Color(255,230,120))\n  g2d.fillOval(sx(0)-sunPx, sy(0)-sunPx, sunPx*2, sunPx*2)\n  g2d.setColor(new java.awt.Color(28,36,48))\n  double[] a = [0.387,0.723,1.0,1.524,5.203,9.537,19.191,30.068] as double[]\n  for(int i=0;i<a.length;i++){ int rr=(int)(a[i]*camScale); g2d.drawOval(sx(0)-rr, sy(0)-rr, rr*2, rr*2) }\n  if(showAsteroidTrails){ g2d.setColor(new java.awt.Color(160,180,200,60)); for(double[] p: astTrails){ g2d.fillRect(sx(p[0]), sy(p[1]), 1, 1) } }\n  g2d.setColor(new java.awt.Color(180,190,210)); for(int i=0;i<AST_N;i++){ g2d.fillRect(sx(ast[i][0]), sy(ast[i][1]), 1, 1) }\n  for(Body b: planets){\n    int px = sx(b.x), py = sy(b.y)\n    int r = Math.max(2, (int)(b.radiusAu*camScale*2 + 1))\n    java.awt.Color c = new java.awt.Color((float)b.r,(float)b.g,(float)b.b)\n    if(showPlanetTrails) drawTrail(g2d,b.trail,c)\n    g2d.setColor(c); g2d.fillOval(px-r,py-r,r*2,r*2)\n    g2d.setColor(new java.awt.Color(210,220,235)); g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.PLAIN, 12))\n    g2d.drawString(b.name, px+6, py-6)\n  }\n  g2d.setColor(new java.awt.Color(230,235,245)); g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.BOLD, 14))\n  String hud = String.format(\"Paused:%s  Speed:%.1fx  Zoom:%.2f px/AU  Center:(%.2f,%.2f) AU\", paused?\"Yes\":\"No\", timeScale, camScale, camX, camY)\n  g2d.drawString(hud, 10, 20)\n  g2d.setFont(new java.awt.Font(\"SansSerif\", java.awt.Font.PLAIN, 12))\n  g2d.drawString(\"Controls: P pause | +/- speed | Wheel zoom | Drag pan | 1 planet trails | 2 asteroid trails | R reset\", 10, 38)\n}\n\nvoid keyDown(KeyEvent e){\n  if(e==null) return\n  switch(e.getKeyCode()){\n    case KeyEvent.VK_P: paused = !paused; break\n    case KeyEvent.VK_ADD:\n    case KeyEvent.VK_EQUALS:\n    case KeyEvent.VK_PLUS: timeScale = Math.min(2000.0, timeScale*1.25); break\n    case KeyEvent.VK_SUBTRACT:\n    case KeyEvent.VK_MINUS: timeScale = Math.max(0.01, timeScale/1.25); break\n    case KeyEvent.VK_R: resetSimulation(); break\n    case KeyEvent.VK_1: showPlanetTrails = !showPlanetTrails; break\n    case KeyEvent.VK_2: showAsteroidTrails = !showAsteroidTrails; break\n  }\n}\n\nvoid keyUp(KeyEvent e){}\n\nvoid mouseDown(ButtonType button){\n  if(button==ButtonType.LEFT){\n    dragging = true\n    try{\n      def wm = uiDisplay?.getCamera()?.getWorldMouse()\n      def bp = uiDisplay?.bounds?.position\n      if(wm!=null){\n        dragStartLocalX = wm.x - (bp!=null?bp.x:0)\n        dragStartLocalY = wm.y - (bp!=null?bp.y:0)\n      } else { dragStartLocalX=0; dragStartLocalY=0 }\n    }catch(Throwable ignore){ dragStartLocalX=0; dragStartLocalY=0 }\n    camStartX = camX; camStartY = camY\n  }\n}\n\nvoid mouseUp(ButtonType button){ dragging=false }\n\nvoid scroll(int amount){\n  if(amount==0) return\n  double factor = (amount>0? 1.1 : 0.9)\n  camScale = Math.max(10.0, Math.min(2000.0, camScale*factor))\n}\n\nvoid destroy(){}",
+            "x": -1332.352,
+            "y": 436.2478,
+            "text": "",
+            "quick_enabled": true
+        }
+    }
+]}

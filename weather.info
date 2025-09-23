@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "Weather",
+  "category": "TOOL",
+  "short-description": "A simple zipcode based weather app.",
+  "version": "",
+  "dependencies": []
+}

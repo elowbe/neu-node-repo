@@ -1,0 +1,14 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# SeedVR2 Image Upscale\n\nSingle-image upscaling using SeedVR2 components.\n\n## Inputs\n- **image**: BufferedImage. Source image.\n- **prompt**: String. Optional guidance.\n- **upscale-by**: Number. Scale factor (e.g., 2, 4).\n\n## Outputs\n- **upscaled**: BufferedImage. Upscaled image.\n\n## Usage\nConnect your source `image`, choose `upscale-by`, optionally provide a `prompt`, and consume `upscaled`.",
+  "name": "SeedVR2 Image Upscale",
+  "category": "SEEDVR",
+  "short-description": "Upscale and restore images with SeedVR2.",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI-SeedVR2_VideoUpscaler",
+    "ComfyUI-VideoHelperSuite"
+  ]
+}

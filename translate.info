@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "# Translate\n\nLLM-powered text translation with target-language control.\n\n## Inputs\n- **input_text**: String. Text to translate.\n- **target_language**: String. Desired language (e.g., `japanese`).\n- **model/system**: Optional model and system prompt wiring.\n\n## Outputs\n- **finalOutput**: String. Translated text.\n- **newChatlog**: JSONArray. Updated conversation (if used).\n\n## Example\n```json\n{\"input_text\": \"Good morning\", \"target_language\": \"french\"}\n```",
+  "name": "Translate",
+  "category": "LLM",
+  "short-description": "Translate text to any language.",
+  "version": "1",
+  "dependencies": ["ollama"]
+}

@@ -1,0 +1,13 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "ComfyUI Dependencies: \nhttps://github.com/kijai/ComfyUI-DepthAnythingV2",
+  "name": "Depth Anything",
+  "category": "DEPTH-ANYTHING",
+  "short-description": "Generate depthmap from image.",
+  "version": "1",
+  "dependencies": [
+    "comfyui",
+    "ComfyUI-Depth-Anything-V2"
+  ]
+}
