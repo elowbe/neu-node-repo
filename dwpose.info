@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "DWPose",
+  "category": "POSE",
+  "short-description": "Estimate human pose with DWPose",
+  "version": "1.0",
+  "dependencies": ["comfyui_controlnet_aux"]
+}

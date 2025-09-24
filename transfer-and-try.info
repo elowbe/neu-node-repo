@@ -1,7 +1,7 @@
 {
   "featured": true,
   "author": "kingroka",
-  "markdown-readme": "",
+  "markdown-readme": "Requirements:\nComfyUI\n  Custom Nodes: \n  - ComfyUI-Easy-Use [https://github.com/yolain/ComfyUI-Easy-Use]\n  Model Structure:\n  - models/lora/qwen/edit\n    > pose_transfer_v2_qwen_edit.safetensors\n    > extract_outfit_qwen-edit-lora.safetensors\n    > clothes_tryon_qwen-edit-lora.safetensors\n\n\nInstructions: \n1. Drag and drop model and pose image files\n2. Enable try on and pose tranfer as needed and set their respective strengths\n3. Click \"Transfer\"\n4. Click on the output image to open it in an exclusive window to copy and save. Images are also saved to ./data/results.",
   "name": "Transfer & Try",
   "category": "TOOL",
   "short-description": "Transfer pose and clothes using Qwen Edit",
