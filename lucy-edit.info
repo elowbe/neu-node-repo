@@ -6,5 +6,9 @@
   "category": "Video",
   "short-description": "Edit videos with natural language",
   "version": "1.0",
-  "dependencies": []
+  "dependencies": [
+    "ComfyUI-KJNodes",
+    "ComfyUI-VideoHelperSuite",
+    "Lucy-Edit-ComfyUI"
+  ]
 }
