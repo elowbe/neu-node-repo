@@ -1,0 +1,10 @@
+{
+  "featured": true,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "Lucy Edit",
+  "category": "Video",
+  "short-description": "Edit videos with natural language",
+  "version": "1.0",
+  "dependencies": []
+}
