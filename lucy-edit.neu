@@ -752,9 +752,9 @@
             "x": 1767.1643,
             "options": "Text\nSelect\nNumber\nTrue/False\nJSON\nImage\nVideo\nList\nFile\nAny\nBool\nBoolean\nString\nInteger\nInt\nFloat\nDouble\nLong\nArray\nJSONArray\nJSONObject",
             "y": -665.5252,
-            "label": "image-0_",
+            "label": "edited-video",
             "quick_enabled": true,
-            "type": "java.awt.image.BufferedImage"
+            "type": "com.loom.Video"
         }
     },
     {
