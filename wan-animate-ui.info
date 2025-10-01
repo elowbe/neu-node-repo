@@ -2,9 +2,9 @@
   "featured": false,
   "author": "kingroka",
   "markdown-readme": "",
-  "name": "WAN Animate UI",
+  "name": "Wan Animate UI",
   "category": "TOOL",
-  "short-description": "A UI for using WAN Animate",
-  "version": "",
+  "short-description": "WAN Animate made easy",
+  "version": "1.0",
   "dependencies": []
 }

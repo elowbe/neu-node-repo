@@ -1,0 +1,10 @@
+{
+  "featured": false,
+  "author": "kingroka",
+  "markdown-readme": "",
+  "name": "crop-to",
+  "category": "IMAGE",
+  "short-description": "Crop images to a square",
+  "version": "",
+  "dependencies": []
+}
